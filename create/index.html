@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Here-聘程中心</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=0.42,maximum-scale=1.0,user-scalable=1">
+    <meta name="author" content="Here">
+    <meta name="keywords" content="here梦创科技，聘程，招聘记录，个人记录，聘程上传,聘程管家">
+    <meta name="description" content="here梦创科技对个人创建招聘进程提供支持，可以看到招聘信息和创建个人招聘进程,不管你是学校大使、学校就业中心干部、辅导员有关就业方面的助理、你都可以创建属于自己的招聘信息与招聘历程，让Here有聘网称为你学生工作或者招聘工作的贴心管家，Here有聘网意在收集市场上大部分公司秋招、春招、各种内推，让同学们不错过每一个招聘信息与招聘历程!">
+    <link rel="stylesheet" type="text/css" href="../css/createJob.css">
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+</head>
+<body>
+	<div id="create-box">
+	 	<a href="../index.html" id="return" title="返回首页">&lt;</a>
+		<h4>聘程中心</h4>
+		<div id="add-msg-box">
+            <p>尊敬的 <span id="show-nick"></span> 用户,您好！这是您的个人收录。点击<label title="点击出现上传框" id="open-btn">展开</label>添加框， 点击<label title="点击出现编辑框" id="open-edit-btn">展开</label>编辑框</p>
+            <div id="open-ipt">
+            	<label>公司:</label>
+	            <input type="text" id="add-msg-incname" autofocus autofocus placeholder="请输入公司名字">
+	            <br>
+	            <label>时间:</label>
+	            <input type="text" id="add-msg-time" placeholder="请输入招聘时间">
+	            <br>
+	            <label>职位:</label>
+	            <textarea id="add-msg-incport" rows="5" cols="50" placeholder="请输入招聘职位"></textarea>
+	            <br>
+	            <label>链接:</label>
+	            <input type="text" id="add-msg-site" placeholder="请输入招聘链接">
+	            <br>
+	            <label>备注:</label>
+	            <textarea id="add-msg-ps" rows="5" cols="50" placeholder="请填写备注"></textarea>
+	            <br>
+	            <button id="msg-person-submit">提交</button>
+            </div>
+            <div id="open-edit">
+            	<p>删除序号: <input type="number" id="all-msg-del" min="1"><button>执行</button></p>
+            </div>
+        </div>
+        <div id="table-box">
+	        <h3>你的独家记忆</h3>
+	        <table border="1">
+	            <thead>
+	                <tr>
+	                    <th>序号</th>
+	                    <th>公司</th>
+	                    <th>时间</th>
+	                    <th>职位</th>
+	                    <th>链接</th>
+	                    <th>备注</th>
+	                </tr>
+	            </thead>
+	            <tbody>
+	            </tbody>
+	        </table>
+	        <div id="lazy">这家伙很懒，神马都没创建~先去<a href="../index.html">首页</a>看看吧~</div>
+    	</div>
+	</div>
+	<footer>
+        <p>让我们不错过每一个心仪的招聘信息！</p>
+        <p>powered by:Here  ©梦创科技</p>
+    </footer>
+	<script type="text/javascript" src="../js/jquery.js"></script>
+	<script type="text/javascript" src="../js/createJob.js"></script>
+</body>
+</html>
