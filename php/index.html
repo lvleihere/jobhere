@@ -1,0 +1,37 @@
+<?php  
+
+$localhost = 'localhost';
+$username = 'wd52130899';
+$password = 'wd52130899';
+$database = 'wd52130899';
+
+$conn = mysqli_connect($localhost,$username,$password,$database);
+mysqli_query($conn,'set names utf8');
+if(!conn){
+	die('数据库连接失败！');
+}
+
+$username = htmlspecialchars($_POST['username']);
+$who = htmlspecialchars($_POST['who']);
+$app = htmlspecialchars($_POST['app']);
+$classify = htmlspecialchars($_POST['classify']);
+$content = htmlspecialchars($_POST['content']);
+$time = htmlspecialchars($_POST['time']);
+
+$sql = 'insert into info values(null,"'.$who.'","'.$username.'","'.$app.'","'.$classify.'","'.$content.'","'.$time.'")';
+$result = mysqli_query($conn,$sql);
+if($result){
+	echo '提交成功';
+}else{
+	echo '提交失败！';
+}
+/*重新排序*/
+$sql = 'SET @i=0;';
+mysqli_query($conn,$sql);
+$sql = 'UPDATE info SET id=(@i:=@i+1);';
+mysqli_query($conn,$sql);
+$sql = 'ALTER TABLE  tablename  AUTO_INCREMENT=0;';
+mysqli_query($conn,$sql);
+
+
+?>
