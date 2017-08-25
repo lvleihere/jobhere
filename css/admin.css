@@ -1,0 +1,154 @@
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  content: '';
+  height: 0;
+  clear: both;
+  visibility: hidden;
+  display: block;
+}
+.tips {
+  width: 180px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-70px);
+  background: #fff;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 14px;
+}
+#wrap {
+  width: 900px;
+  border: 1px green solid;
+  margin: 0 auto;
+  position: relative;
+}
+#wrap > a {
+  display: inline-block;
+  text-decoration: none;
+  width: 40px;
+  height: 30px;
+  position: absolute;
+  color: #222;
+  top: 0;
+  left: 20px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 25px;
+}
+#wrap > h3 {
+  text-align: center;
+  line-height: 35px;
+  border-bottom: 1px green solid;
+  background: #545353;
+  color: white;
+  margin: 0;
+}
+#wrap #main {
+  width: 100%;
+}
+#wrap #main #nav {
+  width: 80px;
+  height: 200px;
+  border: 1px green solid;
+  float: left;
+  font-size: 14px;
+  padding: 0;
+}
+#wrap #main #nav > li {
+  float: left;
+  width: 100%;
+  line-height: 25px;
+  margin: 2px 0;
+  text-align: center;
+  cursor: pointer;
+  background: #f7f5f5;
+}
+#wrap #main #nav > li:hover {
+  background: #6aa56a;
+  color: #fff;
+}
+#wrap #main #nav-box {
+  width: 800px;
+  min-height: 500px;
+  border: 1px green solid;
+  margin-left: 90px;
+}
+#all-msg-box,#usermsg-box{
+  display: none;
+  width: 100%;
+  padding: 10px 0;
+}
+#all-msg-box > p,#usermsg-box> p {
+  margin: 5px 0 5px 0;
+}
+#all-msg-box > p label, #usermsg-box > p label{
+  display: inline-block;
+  width: 70px;
+  font-size: 15px;
+}
+#all-msg-box > p input,#usermsg-box>p input {
+  width: 60px;
+}
+#all-msg-box > p button, #usermsg-box> p button{
+  vertical-align: -1px;
+  margin-left: 5px;
+}
+#all-msg-box table,  #usermsg-box table{
+  width: 100%;
+  border-collapse: collapse;
+}
+#all-msg-box table tr > td:first-of-type, #usermsg-box table tr > td:first-of-type{
+  width: 40px;
+}
+#all-msg-box table > thead, #usermsg-box table > thead{
+  text-align: center;
+}
+#all-msg-box table > tbody, #usermsg-box table > tbody{
+  text-align: center;
+  font-size: 14px;
+}
+// #wrap #main #nav-box #all-msg-box table > tbody > tr:nth-child(even) {
+//   background: #eff3ef;
+// }
+#wrap #main #nav-box #users-box {
+  display: none;
+  width: 100%;
+  padding: 10px 0;
+}
+#wrap #main #nav-box #users-box > div > div {
+  margin: 5px 0 5px 0;
+}
+#wrap #main #nav-box #users-box > div > div label {
+  display: inline-block;
+  width: 70px;
+  font-size: 15px;
+}
+#wrap #main #nav-box #users-box > div > div input {
+  width: 60px;
+}
+#wrap #main #nav-box #users-box > div > div button {
+  vertical-align: -1px;
+  margin-left: 5px;
+}
+#wrap #main #nav-box #users-box table {
+  width: 100%;
+  border-collapse: collapse;
+}
+#wrap #main #nav-box #users-box table tr > td:first-of-type {
+  width: 40px;
+}
+#wrap #main #nav-box #users-box table > thead {
+  text-align: center;
+}
+#wrap #main #nav-box #users-box table > tbody {
+  text-align: center;
+  font-size: 14px;
+}
+#wrap #main #nav-box #users-box table > tbody > tr:nth-child(even) {
+  background: #eff3ef;
+}

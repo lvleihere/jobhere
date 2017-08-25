@@ -1,0 +1,35 @@
+*{
+	margin:0;
+	padding:0;
+}
+ul,li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+.clearfix{
+	zoom:1;
+}
+.clearfix:after{
+	content: '';
+	height: 0;
+	display: block;
+	visibility: hidden;
+	clear: both;
+}
+html,body{
+	font-family: "Arial","Microsoft YaHei","黑体","宋体","sans-serif";
+}
+
+table>tbody>tr:nth-child(even) {
+  background: #f9f9f9;
+}
+footer{
+  margin: 50px 0 5px 0;
+}
+footer>p{
+  text-align: center;
+  font-size: 14px;
+  line-height: 22px;
+}

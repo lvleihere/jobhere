@@ -1,0 +1,129 @@
+#user-center{
+	width: 900px;
+	border:1px green solid;
+	margin:0 auto;
+	position: relative;
+}
+#user-center>a {
+  display: inline-block;
+  text-decoration: none;
+  width: 40px;
+  height: 30px;
+  position: absolute;
+  color: #222;
+  top: 0;
+  left: 20px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 25px;
+}
+#user-center>h4{
+	line-height: 30px;
+	text-align: center;
+	border-bottom: 1px green solid;
+}
+#user-center>div{
+	width:880px;
+	border:1px #D9EDF7 solid;
+	border-radius: 3px;
+	margin:5px 0 0 5px;
+	border:1px #D9EDF7 solid;
+}
+#user-center>div>p{
+	background: #D9EDF7;
+	line-height: 35px;
+	font-size: 14px;
+	padding-left: 10px;
+	margin-bottom: 5px;
+}
+#greeting-name{
+	color: red;
+}
+#user-center>div>div>ul{
+	padding:5px 0 0 5px;
+	border:1px green solid;
+	border-radius: 3px;
+	width: 130px;
+	height: 400px;
+	float: left;
+	margin-left: 5px;
+}
+#user-center>div>div>ul>li:first-of-type{
+	font-size: 15px;
+	color: green;
+	font-weight: bold;
+}
+#user-center>div>div>ul>li{
+	line-height: 22px;
+	font-size: 15px;
+}
+#user-center>div>div>ul>li>label{
+	display: inline-block;
+	width: 40px;
+}
+#user-center>div>div>ul>li>span{
+	font-size: 13px;
+}
+#user-center-table{
+	width: 725px;
+	min-height: 200px;
+	border:1px green solid;
+	border-radius: 3px;
+	float: left;
+	margin-left: 5px;
+}
+#user-center-table>p{
+	margin: 10px 0 0 3px;
+	font-size: 15px;
+	color: green;
+	font-weight: bold;
+}
+#user-center-table table {
+  width: 715px;
+  margin: 10px auto;
+  border-collapse: collapse;
+  text-align: center;
+}
+#lazy{
+	display: none;
+	text-align: center;
+	color: #0b8bcc;
+	font-family: 'YouYuan';
+}
+
+#lazy>a{
+  color: black;
+  font-size: 14px;
+}
+table>thead>tr>th:first-of-type, table>tbody>tr>td:first-of-type{
+	width: 32px;
+}
+table>thead>tr>th:nth-of-type(2){
+	width: 100px;
+}
+table>tbody>tr>td:nth-of-type(2){
+	width: 100px;
+	text-shadow: 0 0 1px #e0e6e2;
+}
+table>thead>tr>th:nth-of-type(3){
+	width: 100px;
+}
+table>tbody>tr>td:nth-of-type(3){
+	width: 100px;
+	font-size: 14px;
+
+}
+table>thead>tr>th:nth-of-type(5), table>tbody>tr>td:nth-of-type(5){
+	width: 32px;
+}
+table>thead>tr>th:last-of-type{
+ 	width: 100px;
+}
+table>tbody>tr>td:last-of-type{
+	width: 100px;
+	font-size: 14px;
+	color:green;
+}
+table>tbody>tr:hover{
+  background: #fffec8;
+}

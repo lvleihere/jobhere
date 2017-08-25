@@ -1,0 +1,153 @@
+.clearfix{
+	zoom:1;
+}
+.clearfix:after{
+	content: '';
+	height: 0;
+	clear: both;
+	visibility: hidden;
+	display: block;
+}
+.tips{
+	width:140px;
+	height:40px;
+	line-height:40px;
+	text-align:center;
+	position:fixed;
+	top:0;
+	left:50%;
+	transform:translateX(-70px);
+	background:#fff;
+	color:rgba(0,0,0,0.7);
+	font-size: 14px;
+}
+#wrap{
+	width: 1000px;
+	border:1px green solid;
+	margin:0 auto;
+	position: relative;
+	&>a{
+		display: inline-block;
+		text-decoration: none;
+		width: 20px;
+		height: 20px;
+		position: absolute;
+		color: white;
+		top: 6px;
+		left: 3px;
+		cursor: pointer;
+	}
+	&>h3{
+		text-align: center;
+		line-height: 35px;
+		border-bottom: 1px green solid;
+		background: #545353;
+		color: white;
+		margin:0;
+	}
+	#main{
+		width: 100%;
+		#nav{
+			width: 80px;
+			height: 200px;
+			border:1px green solid;
+			float: left;
+			font-size: 14px;
+			padding:0;
+			&>li{
+				float: left;
+				width: 100%;
+				line-height: 25px;
+				margin:2px 0;
+				text-align: center;
+				cursor: pointer;
+				background: #f7f5f5;
+				&:hover{
+					background: #6aa56a;
+					color: #fff;
+				}
+			}
+		}
+		#nav-box{
+			width: 900px;;
+			height: 500px;
+			border:1px green solid;
+			margin-left: 90px;
+			#all-msg-box{
+				display: none;
+				width: 100%;
+				padding:10px 0; 
+				&>p{
+					margin:5px 0 5px 0;
+					label{
+						display: inline-block;
+						width: 70px;
+						font-size: 15px;
+					}
+					input{
+						width: 60px;
+					}
+					button{
+						vertical-align: -1px;
+						margin-left: 5px;
+					}
+				}
+				table{
+					width: 100%;
+					border-collapse: collapse;
+					tr>td:first-of-type{
+						width: 40px;
+					}
+					&>thead{
+						text-align: center;
+					}
+					&>tbody{
+						text-align: center;
+						font-size: 14px;
+						&>tr:nth-child(even){
+							background: #eff3ef;
+						}
+					}
+				}
+			}
+			#users-box{
+				display: none;
+				width: 100%;
+				padding:10px 0; 
+				&>div>div{
+					margin:5px 0 5px 0;
+					label{
+						display: inline-block;
+						width: 70px;
+						font-size: 15px;
+					}
+					input{
+						width: 60px;
+					}
+					button{
+						vertical-align: -1px;
+						margin-left: 5px;
+					}
+				}
+				table{
+					width: 100%;
+					border-collapse: collapse;
+					tr>td:first-of-type{
+						width: 40px;
+					}
+					&>thead{
+						text-align: center;
+					}
+					&>tbody{
+						text-align: center;
+						font-size: 14px;
+						&>tr:nth-child(even){
+							background: #eff3ef;
+						}
+					}
+				}
+			}
+		}
+		
+	}
+}
