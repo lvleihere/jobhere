@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<!--
+
+
+          _____                    _____                    _____                    _____          
+         /\    \                  /\    \                  /\    \                  /\    \         
+        /::\____\                /::\    \                /::\    \                /::\    \        
+       /:::/    /               /::::\    \              /::::\    \              /::::\    \       
+      /:::/    /               /::::::\    \            /::::::\    \            /::::::\    \      
+     /:::/    /               /:::/\:::\    \          /:::/\:::\    \          /:::/\:::\    \     
+    /:::/____/               /:::/  \:::\    \        /:::/  \:::\    \        /:::/  \:::\    \    
+   /::::\    \              /::::\   \:::\    \      /::::\   \:::\    \      /::::\   \:::\    \   
+  /::::::\    \   _____    /::::::\   \:::\    \    /::::::\   \:::\    \    /::::::\   \:::\    \  
+ /:::/\:::\    \ /\    \  /:::/\:::\   \:::\    \  /:::/\:::\   \:::\____\  /:::/\:::\   \:::\    \
+/:::/  \:::\    /::\____\/:::/  \:::\   \:::\____\/:::/  \:::\   \:::|    |/:::/  \:::\   \:::\____\
+\::/    \:::\  /:::/    /\:::\   \:::\   \::/    /\::/   |::::\  /:::|____|\:::\   \:::\   \::/    /
+ \/____/ \:::\/:::/    /  \:::\   \:::\   \/____/  \/————|:::::\/:::/    /  \:::\   \:::\   \/____/ 
+          \::::::/    /    \:::\   \:::\                 |:::::::::/    /    \:::\   \:::\    \     
+           \::::/    /      \:::\   \:::\                |::|\::::/    /      \:::\   \:::\____\    
+           /:::/    /        \:::\   \::/                |::| \::/____/        \:::\   \::/    /    
+          /:::/    /          \:::\   \/                 |::|   |               \:::\   \/____/     
+         /:::/    /            \:::\    \                |::|   |                \:::\    \         
+        /:::/    /              \:::\____\               \::|   |                 \:::\____\        
+        \::/    /                \::/    /                \:|   |                  \::/    /        
+         \/____/                  \/____/                  \|___|                   \/____/         
+
+
+
+
+-->
+<head>
+    <title>2017Here梦创科技-您的聘程管家</title>
+    <meta charset="utf-8">
+    <meta name="baidu-site-verification" content="tJbPkQ7udx" />
+    <meta name="viewport" content="width=device-width,initial-scale=0.42,maximum-scale=1.0,user-scalable=1">
+    <meta name="author" content="Here">
+    <meta name="keywords" content="here梦创科技，聘程，招聘记录，个人记录，聘程上传,聘程管家">
+    <meta name="description" content="here梦创科技对个人创建招聘进程提供支持，可以看到招聘信息和创建个人招聘进程,不管你是学校大使、学校就业中心干部、辅导员有关就业方面的助理、你都可以创建属于自己的招聘信息与招聘历程，让Here有聘网称为你学生工作或者招聘工作的贴心管家，Here有聘网意在收集市场上大部分公司秋招、春招、各种内推，让同学们不错过每一个招聘信息与招聘历程!">
+    <link rel="Shortcut Icon" href="image/site.ico">
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./css/header.css">
+    <!-- <link rel="stylesheet" type="text/less" href="./css/index.less"> -->
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <link rel="stylesheet" type="text/css" href="./css/mobile.css">
+</head>
+
+<body>
+    <header>
+        <ul class="outerUl">
+            <li>校招信息</li>
+            <li id="add-msg-btn">录入信息</li>
+            <li><a href="./about/">about</a></li>
+        </ul>
+        <div class="iptDiv">
+            <input type="text" id="search-ipt" placeholder="请输入搜索内容">
+            <p class="line"></p>
+        </div>
+        <div id="nav-login-box">
+            <div id="login">登录</div>
+            <div id="register">注册</div>
+            <p>
+                <span>欢迎您，</span>
+                <span id="show-username"></span>
+                <div id="user-center">
+                    <ul>
+                        <li><a href="./user/">个人中心</a></li>
+                        <li><a href="./createJob/">聘程中心</a></li>
+                        <li id="login-out">退出登录</li>
+                    </ul>
+                </div>
+            </p>
+        </div>
+    </header>
+    <div id="table-box">
+        <h3>所有聘程</h3>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>序号</th>
+                    <th>公司</th>
+                    <th>时间</th>
+                    <th>职位</th>
+                    <th>链接</th>
+                    <th>备注</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <div class="login-register-wrap">
+        <!--login-->
+        <div class="login-box">
+            <h2>---login---</h2>
+            <div class="login-edit">
+                <label>用户名:</label>
+                <input type="text" id="login-username" placeholder="输入用户名" autofocus required>
+                <br>
+                <label>密码:</label>
+                <input type="password" id="login-password" placeholder="输入密码" required>
+                <br>
+                <button id="login-btn">登录</button>
+                <p><span id="admin-login-btn">管理员登录 </span><a href="javascript:void(0)" id="go-register">去注册</a><span>没有账号？</span></p>
+            </div>
+        </div>
+        <!--register-->
+        <div class="register-box">
+            <h2>---register---</h2>
+            <div class="register-edit">
+                <label>用户名:</label>
+                <input type="text" id="register-username" placeholder=" 请使用手机注册" autofocus required><span class="must-phone"> *必须为手机号</span>
+                <br>
+                <label>密码:</label>
+                <input type="password" id="register-password" placeholder="输入注册密码" required>
+                <br>
+                <label>昵称:</label>
+                <input type="text" id="register-nick" placeholder="请输入昵称" required>
+                <br>
+                <button id="register-btn">注册</button>
+                <p>有账号？<a href="javascript:void(0)" id="go-login">去登陆</a></p>
+            </div>
+        </div>
+    </div>
+    <div id="add-msg-wrap">
+        <div id="add-msg-box">
+            <h4>秋招录入</h4>
+            <label>公司:</label>
+            <input type="text" id="add-msg-incname" autofocus placeholder="请输入公司名字">
+            <br>
+            <label>时间:</label>
+            <input type="text" id="add-msg-time" placeholder="请输入招聘时间">
+            <br>
+            <label>职位:</label>
+            <textarea id="add-msg-incport" rows="5" cols="50" placeholder="请输入招聘职位，多个以逗号分隔"></textarea>
+            <br>
+            <label>链接:</label>
+            <input type="text" id="add-msg-site" placeholder="请输入招聘链接">
+            <br>
+            <label>备注:</label>
+            <textarea id="add-msg-ps" rows="5" cols="50" placeholder="请输入您需要备注的东西"></textarea>
+            <br>
+            <button id="msg-submit">提交</button>
+        </div>
+    </div>
+    <footer>
+        <p>让我们不错过每一个心仪的招聘信息！</p>
+        <p>powered by:Here  ©梦创科技 <span><script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1263683715'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s13.cnzz.com/z_stat.php%3Fid%3D1263683715%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script></span></p>
+        <p>今天是<span class="nowTime">*</span>，本站已安全运行<span class="runTime">*</span>。</p>
+    </footer>
+    <script src="https://s13.cnzz.com/z_stat.php?id=1263683715&web_id=1263683715" language="JavaScript"></script>
+    <!-- <script type="text/javascript" src="./js/less.min.js"></script> -->
+    <script type="text/javascript" src="./js/jquery.js"></script>
+    <script type="text/javascript" src="./js/index.js"></script>
+</body>
+
+</html>
