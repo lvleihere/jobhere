@@ -40,3 +40,5 @@ node
 jquery
 mysql
 php
+我靠我的logo去哪里了，要看的只有去首页index看了
+
