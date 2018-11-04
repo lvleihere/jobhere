@@ -37,7 +37,7 @@ here梦创科技对个人创建招聘进程提供支持，可以看到招聘信�
 技术栈：
 less
 node
-jquery
+vue
 mysql
 php
 我靠我的logo去哪里了，要看的只有去首页index看了,后台系统就不上了，要不然........
